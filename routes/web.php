@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/rooms/create','Admin\BookController@create');
+Route::post('/rooms','Admin\BookController@store');
+Route::get('/rooms','Admin\BookController@index');
