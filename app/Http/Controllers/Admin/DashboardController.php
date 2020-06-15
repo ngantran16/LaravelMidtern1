@@ -27,6 +27,7 @@ class DashboardController extends Controller
             'number' => 'required',
             'area' => 'required',
             'price' => 'required',
+            'image' => 'mimes:jpeg,jpg,png,gif|required|max:10000',
         ]);
 
         $room = new Room;
