@@ -1,0 +1,41 @@
+.text_menu{
+    color:black;
+    font-weight: bold;
+}
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    height: auto;
+    margin: 35px;
+}
+.title{
+    font-size: 10px;
+    color:gray;
+}
+.data{
+    text-align: right;
+    float: right;
+}
+.data-price{
+    font-weight: bold;
+    text-align: right;
+    float: right;
+}
+.button-order{
+    font-weight: bold;
+    color:orange;
+    float:right;
+    margin-top:-20px;
+    margin-right:-13px;
+    position: relative;
+}
+.button-view{
+    color:orange;
+    float:left;
+    margin-top:-20px;
+    margin-left:-13px;
+    position: relative;
+}

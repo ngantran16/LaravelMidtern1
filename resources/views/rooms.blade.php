@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
         .text_menu{
             color:black;
@@ -50,29 +51,28 @@
             position: relative;
         }
 
-
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav" style = "margin-left:800px;">
+        <ul class="navbar-nav" style = "margin-left:700px;">
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">TRANG CHỦ</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-home"></i>TRANG CHỦ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">PHÒNG & MỨC GIÁ</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-star"></i>PHÒNG & MỨC GIÁ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">ĐẶT PHÒNG</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-undo-alt"></i>ĐẶT PHÒNG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">HÌNH ẢNH</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-images"></i>HÌNH ẢNH</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">GIỚI THIỆU</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-info-circle"></i>GIỚI THIỆU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text_menu" href="#">LIÊN HỆ</a>
+            <a class="nav-link text_menu" href="#"><i class="fas fa-user"></i>LIÊN HỆ</a>
           </li>
         </ul>
       </nav>
