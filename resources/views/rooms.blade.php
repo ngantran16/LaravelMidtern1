@@ -29,6 +29,28 @@
             text-align: right;
             float: right;
         }
+        .data-price{
+            font-weight: bold;
+            text-align: right;
+            float: right;
+        }
+        .button-order{
+            font-weight: bold;
+            color:orange;
+            float:right;
+            margin-top:-20px;
+            margin-right:-13px;
+            position: relative;
+        }
+        .button-view{
+            color:orange;
+            float:left;
+            margin-top:-20px;
+            margin-left:-13px;
+            position: relative;
+        }
+
+
     </style>
 </head>
 <body>
@@ -69,22 +91,19 @@
                         <hr>
                         <p><span class = "title">KÍCH THƯỚC:</span><span class = "data">{{ $room->area }} m2</span></p>
                         <hr>
-                        <p><span class = "title">GIÁ PHÒNG:</span><span class = "data">{{ $room->getDisplayPrice() }}</span></p>
+                        <p><span class = "title">GIÁ PHÒNG:</span><span class = "data-price">{{ $room->getDisplayPrice() }}</span></p>
                         <hr>
-                        <div class = "row">
-                            <div class = "col-sm 6">
-                                <form action="/home/details/{{ $room->id }}" method="POST">
-                                    @csrf
-                                    <button class="btn btn-link">Xem</button>
-                                </form>
-                            </div>
-                            <div class = "col-sm 6">
-                                <form action="/home/addToCart/{{ $room->id }}" method="POST">
-                                    @csrf
-                                    <button class="btn btn-link" type="submit">Đặt phòng</button>
-                                </form>
-                            </div>
-                        </div>
+                        <p>
+                            <form action="/home/details/{{ $room->id }}" method="POST">
+                                @csrf
+                                <button class="btn btn-link button-view" style="color:orange;">XEM</button>
+                            </form>
+
+                            <form action="/home/addToCart/{{ $room->id }}" method="POST">
+                                @csrf
+                                <button class="btn btn-link button-order" type="submit">Đặt phòng</button>
+                            </form>
+                        </p>
                         </div>
                     </div>
                 </div>

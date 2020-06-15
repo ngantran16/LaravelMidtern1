@@ -16,6 +16,15 @@
 </head>
 <body>
     <div class = "insert">
+        {{-- @if ($errors->any()) <!-- error là một biến session -->
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif --}}
     <form method="POST" action="/rooms" enctype="multipart/form-data" >
         @csrf
         <h1>Add a room</h1>
@@ -23,26 +32,41 @@
         <div class="form-group">
             <label>Name:</label>
             <input class="form-control" placeholder="Enter name" name = "name">
+            @error('name')
+            <div style="color:red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="form-group">
             <label>Type Room:</label>
             <input class="form-control" placeholder="Enter type room" name = "typeroom">
+            @error('typeroom')
+            <div style="color:red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="form-group">
             <label>Number:</label>
             <input class="form-control" placeholder="Enter number" name = "number">
+            @error('number')
+            <div style="color:red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="form-group">
             <label>Area:</label>
             <input class="form-control" placeholder="Enter area" name = "area">
+            @error('area')
+            <div style="color:red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="form-group">
             <label>Price:</label>
             <input class="form-control" placeholder="Enter price" name = "price">
+            @error('price')
+            <div style="color:red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="form-group">

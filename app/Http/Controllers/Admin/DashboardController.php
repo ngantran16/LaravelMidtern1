@@ -21,6 +21,14 @@ class DashboardController extends Controller
         $price =$request->price;
         $image = $request->file('image')->store('public');
 
+        $request->validate([
+            'name' => 'required|unique:rooms|',
+            'typeroom' => 'required',
+            'number' => 'required',
+            'area' => 'required',
+            'price' => 'required',
+        ]);
+
         $room = new Room;
         $room->name = $name;
         $room->image = $image;

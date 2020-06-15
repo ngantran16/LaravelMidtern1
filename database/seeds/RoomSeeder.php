@@ -16,7 +16,7 @@ class RoomSeeder extends Seeder
         for($i = 0; $i<10; $i++){
             DB::table('rooms')->insert([
                 'name' => $faker->catchPhrase,
-                'image' => "https://top10tphcm.com/wp-content/uploads/2020/05/van-phong-cho-thue-binh-thanh-696x471.jpg",
+                'image' => "public/feVDnbIgzR5tn9iWMwpOPlQ9JettlS2VwylaDykJ.jpeg",
                 'typeroom' => $faker->randomNumber(1),
                 'number' => $faker->randomNumber(2),
                 'area' => $faker->randomNumber(2),
