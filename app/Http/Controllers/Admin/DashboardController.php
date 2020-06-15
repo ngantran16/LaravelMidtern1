@@ -6,11 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Room;
 
-class BookController extends Controller
+class DashboardController extends Controller
 {
-    function index(){
-        return view('rooms');
-    }
     function create(){
         return view('admin.create');
     }

@@ -8,6 +8,6 @@ class Room extends Model
 {
     function getDisplayPrice(){
         $formatedPrice = number_format($this->price,0,',','.');
-        return $formatedPrice . " VND ";
+        return $formatedPrice . " vnđ ";
     }
 }

@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/rooms/create','Admin\BookController@create');
-Route::post('/rooms','Admin\BookController@store');
-Route::get('/rooms','Admin\BookController@index');
+Route::get('/rooms/create','Admin\DashboardController@create');
+Route::post('/rooms','Admin\DashboardController@store');
+Route::get('/rooms','User\RoomController@index');
